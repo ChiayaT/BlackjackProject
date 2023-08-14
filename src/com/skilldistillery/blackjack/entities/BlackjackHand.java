@@ -9,7 +9,9 @@ public class BlackjackHand extends Hand {
 	}
 
 	@Override
+	public
 	int getHandValue() {
+		total = 0;
 		for (Card card : numberOfCards) {
 			total += card.getValue();
 		}
@@ -17,10 +19,18 @@ public class BlackjackHand extends Hand {
 	}
 	
 	public boolean isBlackjack() {
+		total = 0;
+		for (Card card : numberOfCards) {
+			total += card.getValue();
+		}
 		return (total == 21);
 	}
 	
 	public boolean isBust() {
+		total = 0;
+		for (Card card : numberOfCards) {
+			total += card.getValue();
+		}
 		return (total > 21);
 	}
 	

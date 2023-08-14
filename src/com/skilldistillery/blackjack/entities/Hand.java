@@ -5,7 +5,7 @@ import java.util.List;
 
 public abstract class Hand {
 	
-	ArrayList<Card> numberOfCards;
+	protected ArrayList<Card> numberOfCards;
 	
 	Hand(){
 		
@@ -15,7 +15,7 @@ public abstract class Hand {
 		numberOfCards.add(card);
 	}
 	
-	void clear() {
+	public void clear() {
 		numberOfCards.removeAll(numberOfCards);
 	}
 	

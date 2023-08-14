@@ -29,7 +29,8 @@ public class Deck {
 		Collections.shuffle(cards);
 	}
 	public int size(){
-		return 0;
+		return cards.size();
+		
 	}
 	public Card getCard(int i) {
 		return cards.get(i);
